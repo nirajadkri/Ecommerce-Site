@@ -1,0 +1,50 @@
+body {
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.coin-animation {
+    font-size: 20px;
+    color: #0fffc8;
+    animation: glowing 1.5s infinite;
+}
+
+@keyframes glowing {
+    0% { color: #0fffc8; }
+    50% { color: #e0ffff; }
+    100% { color: #0fffc8; }
+}
+
+.claim-btn {
+    background-color: #0fffc8;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #0fffc8;
+    transition: background-color 0.3s;
+}
+
+.claim-btn:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.referral-section {
+    margin-top: 30px;
+    font-size: 16px;
+}
