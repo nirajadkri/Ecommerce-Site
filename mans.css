@@ -12,6 +12,7 @@ body {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    font-size: 1.5em;
 }
 
 /* Navigation styling */
@@ -25,7 +26,7 @@ body {
 .nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 10px;
     font-size: 1.2em;
 }
 
@@ -59,4 +60,49 @@ body {
 
 .footer-li a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Styling */
+/* Adjust header font size for smaller screens */
+@media (max-width: 768px) {
+    .header {
+        font-size: 1.2em;
+        padding: 15px 0;
+    }
+
+    .nav {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .nav a {
+        margin: 0 8px;
+        font-size: 1em;
+    }
+
+    .lzd-footer-inner {
+        text-align: center;
+    }
+}
+
+/* Adjust layout for very small screens (mobile phones) */
+@media (max-width: 480px) {
+    .header {
+        font-size: 1em;
+        padding: 10px 0;
+    }
+
+    .nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .lzd-footer-inner {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    .footer-title {
+        font-size: 1em;
+    }
 }
