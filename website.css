@@ -1,164 +1,175 @@
-/* Basic styling for the page */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
 }
-
-/* Header styling */
 .header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
-    font-size: 1.5em;
+    padding: 15px 0;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+.cartt {
+    position: absolute;
+    top: 10px; /* Distance from the top of the screen */
+    right: 10px; /* Distance from the right of the screen */
 }
 
-/* Navigation styling */
-.nav {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+.cart-icon {
+    width: 30px;
+    height: 30px;
+    position: relative; /* Change to relative to position elements inside */
+    background-color: white; /* White background color */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for both effects */
+    
+    
+}
+
+    
+ .cart-icon:hover {
+        transform: scale(1.1); /* Scale up the image */
+        opacity: 0.9; /* Slightly reduce the opacity */
+ }
+    
+
+
+.cart-count {
+    position: absolute;
+    top: -5px; /* Adjust to position it inside the top of the cart icon */
+    right: -5px; /* Adjust to position it inside the right of the cart icon */
+    background-color: red; /* Background color for the count indicator */
+    color: white; /* Text color */
+    border-radius: 50%; /* Make it circular */
+    padding: 2px 5px; /* Padding for the count */
+    font-size: 12px; /* Smaller font size */
+    min-width: 18px; /* Minimum width for circular shape */
     text-align: center;
+    z-index: 1; /* Ensure it stays on top */
+}
+
+    
+
+
+
+
+.home_icon{
+    width: 30px;
+    height: 30px;
+    position: absolute; /* Position it absolutely on the screen */
+    top: 10px; /* Distance from the top of the screen */
+    left: 10px; /* Distance from the left of the screen */
+    background-color: white; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for the button */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+     /* Ensure it stays on top of other elements */;
+
+}
+.home_icon:hover{
+    background-color: blue;
 }
 
 .nav a {
     color: #fff;
+    margin: 0 15px;
     text-decoration: none;
-    margin: 0 10px;
-    font-size: 1.2em;
-    display: inline-block;
 }
-
 .nav a:hover {
     text-decoration: underline;
 }
-
-/* Main Content Styling */
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 20px;
-    padding: 0 10px;
+    padding: 20px;
+    width: 100%;
 }
-
-.product {
+.category, .product {
     background-color: #fff;
-    border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 15px;
-    margin: 10px;
-    width: 30%;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
     text-align: center;
 }
-
 .product img {
     max-width: 100%;
-    height: auto;
     border-radius: 5px;
 }
-
-/* Footer Styling */
 .footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
-}
-
-/* Responsive Styling */
-/* For Tablets and Smaller Screens */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .product {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    .header {
-        font-size: 1.2em;
-    }
-
-    .nav {
-        font-size: 1em;
-    }
-}
-
-/* For Mobile Phones */
-@media (max-width: 480px) {
-    .header {
-        font-size: 1em;
-        padding: 10px 0;
-    }
-
-    .nav a {
-        display: block;
-        margin: 5px 0;
-    }
-
-    .product {
-        width: 90%;
-    }
-
-    .footer {
-        font-size: 0.9em;
-    }
-}
-/* Mobile Navigation Styles */
-.mobile-nav {
-    display: none; /* Hidden by default */
-    background-color: #333;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-}
-
-.menu-toggle {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
-.dropdown-menu {
-    display: none;
-    flex-direction: column;
-    background-color: #444;
-    position: absolute;
+    padding: 15px 0;
+    position: fixed;
     width: 100%;
-    top: 50px; /* Adjust position below the button */
-    left: 0;
-    z-index: 1;
-}
-
-.dropdown-menu a {
-    color: #fff;
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-    font-size: 1.2em;
-}
-
-.dropdown-menu a:hover {
-    background-color: #555;
-}
-
-/* Show mobile navigation on small screens */
-@media (max-width: 768px) {
-    .mobile-nav {
-        display: block; /* Show the mobile menu */
+    bottom: 0;}
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
     }
-
+    
+    
+    
+    
     .nav {
-        display: none; /* Hide the original navigation */
+        display: flex;
+        justify-content: center;
+        background-color: #333;
     }
-}
+    
+    .nav a {
+        color: white;
+        padding: 15px 20px;
+        text-decoration: none;
+    }
+    
+    .nav a:hover {
+        background-color: #555;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    .product {
+        background-color: #fff; /* White background */
+        border: 1px solid #ddd; /* Light gray border */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+        margin: 15px; /* Spacing between products */
+        padding: 20px; /* Inner padding */
+        width: 200px; /* Fixed width */
+        text-align: center; /* Center the text */
+        transition: transform 0.2s; /* Smooth transform effect */
+    }
+    
+    .product:hover {
+        transform: translateY(-5px); /* Slight lift on hover */
+    }
+    
+    .product img {
+        max-width: 100%; /* Responsive images */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    
+    

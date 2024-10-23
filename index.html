@@ -13,24 +13,21 @@
         <p>Explore the latest products for Men, Ladies, and Kids</p>
     </div>
 
-    <!-- Desktop Navigation Bar -->
-    <div class="nav">
-        <a href="index.html">Home</a>
-        <a href="mans-section.html">Men</a>
-        <a href="girls.html">Ladies</a>
-        <a href="kids.html">Kids</a>
-    </div>
+    <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
+<!-- Navigation Bar -->
 
-    <!-- Mobile Navigation Dropdown (Hidden by default) -->
-    <div class="mobile-nav">
-        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
-        <div class="dropdown-menu" id="mobileDropdown">
-            <a href="index.html">Home</a>
-            <a href="mans-section.html">Men</a>
-            <a href="girls.html">Ladies</a>
-            <a href="kids.html">Kids</a>
-        </div>
+    <a href="index.html"><img src="images/home.png" class="home_icon"></a> <!-- Home button -->
+    <div class="cartt">
+        <a href="cart.html" id="view-cart"><img src="images/cart.png" alt="Cart" class="cart-icon"> <span id="cart-count"class="cart-count">0</span></a>
+</div>
     </div>
+<div class="nav">
+    <a href="mans-section.html">Men</a>
+    <a href="girls.html">Ladies</a>
+    <a href="kids.html">Kids</a>
+</div>  
+
 
     <!-- Main Content Container -->
     <div class="container">
@@ -59,6 +56,14 @@
             <button class="add-to-cart" data-name="Men's Black Shirt" data-price="500">Add to Cart</button>
             <a href="mans.html">View Details</a>
         </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div id="cart" style="display: none; border: 1px solid #ccc; padding: 15px; margin-top: 20px;">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <a href="cart.html"></a>
+        
     </div>
 
     <!-- Footer -->

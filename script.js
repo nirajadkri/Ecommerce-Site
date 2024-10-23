@@ -76,11 +76,3 @@ function updateCartCount() {
     const cartCountElement = document.getElementById('cart-count');
     cartCountElement.textContent = cart.reduce((count, item) => count + item.quantity, 0);
 }
-function toggleMenu() {
-    var dropdown = document.getElementById("mobileDropdown");
-    if (dropdown.style.display === "block") {
-        dropdown.style.display = "none";
-    } else {
-        dropdown.style.display = "block";
-    }
-}
